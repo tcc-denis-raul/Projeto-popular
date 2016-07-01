@@ -1,0 +1,5 @@
+Scripts para popular o banco de dados do TCC P.A.L.O.M.A.
+
+Executando:
+==========
+- Make run: apaga o banco de dados atual e cria novos dados conforme os scripts.
