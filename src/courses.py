@@ -25,5 +25,6 @@ language = {
     'language': ['ingles']
 }
 
+db.client(collection).remove({})
 
 db.client(collection).insert_one(language)
