@@ -1,3 +1,5 @@
+clean:
+	@find . -name '*.pyc' -delete
 run: 
 	@python src/courses.py
 	@python src/courses_language.py
