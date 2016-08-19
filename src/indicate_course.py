@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Coleção para salvar as caracteristicas dos cursos para cada usuário
+# Coleção para salvar os cursos indicado pelo usuário
 import os
 
 from pymongo import MongoClient
@@ -19,6 +19,8 @@ class DataBase():
 
 db = DataBase()
 
-collection = 'user_profile_courses'
+collection = 'indicate_courses'
 
-db.client(collection).ensure_index('username', unique=True)
+db.client(collection).remove({})
+
+db.client(collection).ensure_index('url', unique=True)

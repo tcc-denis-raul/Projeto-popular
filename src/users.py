@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# Coleção para salvar informações do usuário (login)
 import os
 
 from pymongo import MongoClient
@@ -20,4 +21,4 @@ db = DataBase()
 
 collection = 'users'
 
-db.client(collection).ensure_index('email', unique=True)
+db.client(collection).ensure_index('username', unique=True)

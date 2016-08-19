@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+# Base de dados: Cursos online de ingles cadastrados no site
 import os
 
 from pymongo import MongoClient, ASCENDING

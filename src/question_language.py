@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# Perguntas para selecionar o melhor curso online de ingles
 import os
 
 from pymongo import MongoClient
