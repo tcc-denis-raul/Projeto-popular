@@ -12,7 +12,7 @@ DB_NAME = os.environ.get('DB_NAME', 'paloma')
 class DataBase():
 
     def client(self, collection):
-        client = MongoClient(DB_HOST, DB_PORT)
+        client = MongoClient(DB_HOST, int(DB_PORT))
         db = client[DB_NAME]
         return db[collection]
 

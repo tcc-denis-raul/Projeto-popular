@@ -12,7 +12,7 @@ DB_NAME = os.environ.get('DB_NAME', 'paloma')
 class DataBase():
 
     def client(self, collection):
-        client = MongoClient(DB_HOST, DB_PORT)
+        client = MongoClient(DB_HOST, int(DB_PORT))
         db = client[DB_NAME]
         return db[collection]
 
@@ -32,7 +32,8 @@ courses = [
         "url": "https://www.duolingo.com/pt",
         "extra": ["comunicacao_alunos"],
         "description": "preecher",
-        "rate": 0,
+        "rate": 0.0,
+"count": 0,
     },
     {
         "name": "Memrise",
@@ -45,7 +46,8 @@ courses = [
         "url": "https://www.memrise.com/",
         "extra": ["selecao_nivel", "comunicacao_alunos"],
         "description": "preecher",
-        "rate": 0,
+        "rate": 0.0,
+"count": 0,
     },
     {
         "name": "Live Mocha",
@@ -56,7 +58,8 @@ courses = [
         "url": "http://livemocha.com/",
         "extra": ["selecao_nivel", "professor", "comunicacao_alunos"],
         "description": "preecher",
-        "rate": 0,
+        "rate": 0.0,
+"count": 0,
     },
     {
         "name": "IBEU",
@@ -67,7 +70,8 @@ courses = [
         "url": "http://inglesonline.ibeu.org.br/site/",
         "extra": ["selecao_nivel", "professor", "comunicacao_alunos"],
         "description": "preecher",
-        "rate": 0,
+        "rate": 0.0,
+"count": 0,
     },
     {
         "name": "Busuu",
@@ -78,7 +82,8 @@ courses = [
         "url": "https://www.busuu.com/pt/",
         "extra": ["selecao_nivel", "comunicacao_alunos"],
         "description": "preecher",
-        "rate": 0,
+        "rate": 0.0,
+"count": 0,
     },
     {
         "name": "English Town",
@@ -89,7 +94,8 @@ courses = [
         "url": "http://www.englishtown.com.br/",
         "extra": ["selecao_nivel", "professor", "comunicacao_alunos"],
         "description": "preecher",
-        "rate": 0,
+        "rate": 0.0,
+"count": 0,
     },
     {
         "name": "English Up",
@@ -100,7 +106,8 @@ courses = [
         "url": "http://www.englishup.com.br/",
         "extra": ["selecao_nivel", "professor", "comunicacao_alunos"],
         "description": "preecher",
-        "rate": 0,
+        "rate": 0.0,
+"count": 0,
     },
     {
         "name": "UOL Curso de Ingles",
@@ -111,7 +118,8 @@ courses = [
         "url": "http://cursodeingles.uol.com.br/",
         "extra": ["selecao_nivel", "professor", "comunicacao_alunos"],
         "description": "preecher",
-        "rate": 0,
+        "rate": 0.0,
+"count": 0,
     },
     {
         "name": "Cursos 24 Horas",
@@ -122,7 +130,8 @@ courses = [
         "url": "http://www.cursos24horas.com.br/",
         "extra": ["selecao_nivel", "professor", "comunicacao_alunos"],
         "description": "preecher",
-        "rate": 0,
+        "rate": 0.0,
+"count": 0,
     },
     {
         "name": "Prime cursos",
@@ -133,7 +142,8 @@ courses = [
         "url": "https://www.primecursos.com.br",
         "extra": ["selecao_nivel"],
         "description": "preecher",
-        "rate": 0,
+        "rate": 0.0,
+"count": 0,
     },
     {
         "name": "Open english",
@@ -144,7 +154,8 @@ courses = [
         "url": "http://www.openenglish.com.br/",
         "extra": ["selecao_nivel", "professor"],
         "description": "preecher",
-        "rate": 0,
+        "rate": 0.0,
+"count": 0,
     },
     {
         "name": "Ingles do Jerry",
@@ -155,7 +166,8 @@ courses = [
         "url": "http://inglesdojerry.com.br/",
         "extra": ["professor"],
         "description": "preecher",
-        "rate": 0,
+        "rate": 0.0,
+"count": 0,
     },
     {
         "name": "Babbel",
@@ -166,7 +178,8 @@ courses = [
         "url": "https://pt.babbel.com/",
         "extra": ["selecao_nivel"],
         "description": "preecher",
-        "rate": 0,
+        "rate": 0.0,
+"count": 0,
     },
     {
         "name": "Iped idiomas",
@@ -177,7 +190,8 @@ courses = [
         "url": "https://www.iped.com.br/idiomas",
         "extra": ["selecao_nivel", "comunicacao_alunos"],
         "description": "preecher",
-        "rate": 0,
+        "rate": 0.0,
+"count": 0,
     },
     {
         "name": "Ingles Curso",
@@ -188,7 +202,8 @@ courses = [
         "url": "http://www.inglescurso.net.br/",
         "extra": ["selecao_nivel"],
         "description": "preecher",
-        "rate": 0,
+        "rate": 0.0,
+"count": 0,
     },
     {
         "name": "Aba English",
@@ -199,7 +214,8 @@ courses = [
         "url": "http://www.abaenglish.com/pt/",
         "extra": ["selecao_nivel", "professor"],
         "description": "preecher",
-        "rate": 0,
+        "rate": 0.0,
+"count": 0,
     },
     {
         "name": "Learn American English",
@@ -210,7 +226,8 @@ courses = [
         "url": "http://www.learnamericanenglishonline.com/",
         "extra": ["selecao_nivel"],
         "description": "preecher",
-        "rate": 0,
+        "rate": 0.0,
+"count": 0,
     },
     {
         "name": "1- Language",
@@ -221,7 +238,8 @@ courses = [
         "url": "http://www.1-language.com/",
         "extra": ["selecao_nivel"],
         "description": "preecher",
-        "rate": 0,
+        "rate": 0.0,
+"count": 0,
     },
     {
         "name": "Usa Learns",
@@ -232,7 +250,8 @@ courses = [
         "url": "http://www.usalearns.org/",
         "extra": ["selecao_nivel"],
         "description": "preecher",
-        "rate": 0,
+        "rate": 0.0,
+"count": 0,
     },
     {
         "name": "Petra Lingua",
@@ -244,7 +263,8 @@ courses = [
         "url": "http://www.petralingua.com/pt/",
         "extra": [],
         "description": "preecher",
-        "rate": 0,
+        "rate": 0.0,
+"count": 0,
     },
     {
         "name": "5 minute english",
@@ -255,7 +275,8 @@ courses = [
         "url": "http://www.5minuteenglish.com/",
         "extra": [],
         "description": "preecher",
-        "rate": 0,
+        "rate": 0.0,
+"count": 0,
     },
     {
         "name": "Anki",
@@ -267,7 +288,8 @@ courses = [
         "url": "http://ankisrs.net/",
         "extra": ["selecao_nivel"],
         "description": "preecher",
-        "rate": 0,
+        "rate": 0.0,
+"count": 0,
     },
     {
         "name": "Speaking Your Best Inc",
@@ -278,7 +300,8 @@ courses = [
         "url": "http://www.speakingyourbest.com/",
         "extra": ["professor"],
         "description": "preecher",
-        "rate": 0,
+        "rate": 0.0,
+"count": 0,
     }
 ]
 
